@@ -3,6 +3,7 @@ import Experience from "./components/Experience";
 import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from './components/Projects';
 
 const App: FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: FC = () => {
       <About />
       <Experience />
       <Skills />
+      <Projects />
     </div>
   );
 };

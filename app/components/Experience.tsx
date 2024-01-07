@@ -22,10 +22,10 @@ const ExperienceItem: FC<{
             )
           }
         </div>
-        <p className="text-sm text-gray-600">{item.year}</p>
+        <p className="text-xs text-gray-600 px-4 py-2 bg-gray-50 font-semibold rounded-xl">{item.year}</p>
       </div>
       <h5 className="text-sm">{item.title}</h5>
-      <p className="text-gray-600 max-w-[80%] text-sm">{item.description}</p>
+      <p className="text-gray-600 max-w-[80%] text-xs font-mono">{item.description}</p>
     </article>
   );
 };
@@ -36,25 +36,25 @@ const Experience: FC = () => {
       label: 'Mid-Technician in Informatics Sciences Graduate',
       title: 'Intern Full Stack developer',
       year: '2019',
-      description: 'Mastered algorithms, database management, and web development. Assisted peers, fostering a collaborative learning environment. Excited to apply skills and contribute to the tech field',
+      description: 'Mastered my skills with algorithms and data structures, databases and programming logic. I also learned the basics of web development, including HTML, CSS, and JavaScript. I completed a 3-month internship at a local company, where I developed a web application for managing the company’s internal processes.',
     },
     {
       label: 'Freelancer',
       title: 'Full Stack developer',
       year: '2020 - 2021',
-      description: 'I successfully completed diverse projects for clients across Latin America, encompassing online stores, blogs, and custom applications. My expertise in various technologies helped me deliver tailored solutions, including engaging e-commerce platforms, interactive blogs, and customized applications to streamline client workflows. This experience fostered strong client relationships and solidified my commitment to exceeding expectations.',
+      description: 'I started my career as a freelancer in 2020, where I worked on a variety of projects.',
     },
     {
       label: 'Resultier / Atomic32',
       title: 'Front-end developer -> Lead front-end developer',
       year: '2022 - 2024',
-      description: 'I joined Resultier/Atomic32 in 2022 as a front-end developer and have since contributed to a diverse range of projects. My work has spanned educational platforms, gamified systems, and productivity tools, including an online school system that facilitates engaging learning, an NFT-based game with token rewards, a company growth tracker with detailed metrics, and an accountability platform designed for ease and enjoyment.',
+      description: 'I joined Resultier (formerly Atomic32) as a front-end developer in 2022. I worked on a variety of projects that lead me to become the lead front-end developer in the same year. Having the opportunity to work with a variety of clients, I learned a lot about the importance of communication and teamwork.',
       isRemote: true
     }
   ];
   return (
     <Fragment>
-      <section className="mt-16 mb-4">
+      <section className="mt-16 mb-4 print:my-4">
         <h3 className="text-2xl font-bold">Experience</h3>
       </section>
       <section className="flex flex-col gap-4">
