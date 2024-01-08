@@ -222,12 +222,7 @@ const Skills: FC = () => {
       </div>
       <div className="flex flex-wrap gap-2">
         {
-          skillsPyramid
-          .sort((a, b) => {
-            return levels.indexOf(a.level) - levels.indexOf(b.level);
-          })
-          .reverse()
-          .map(
+          skillsPyramid.map(
             (skill, index) => (
               <SkillItem skill={skill} key={`skill-${skill.id}-${index}`} />
             )

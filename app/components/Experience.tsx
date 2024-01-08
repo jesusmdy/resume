@@ -22,7 +22,7 @@ const ExperienceItem: FC<{
             )
           }
         </div>
-        <p className="text-xs text-gray-600 px-4 py-2 bg-gray-50 font-semibold rounded-xl">{item.year}</p>
+        <p className="text-xs text-gray-600 px-4 py-2 bg-none md:bg-gray-50 font-semibold rounded-xl">{item.year}</p>
       </div>
       <h5 className="text-sm">{item.title}</h5>
       <p className="text-gray-600 max-w-[80%] text-xs font-mono">{item.description}</p>

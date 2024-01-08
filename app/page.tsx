@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 
 const App: FC = () => {
   return (
-    <div className="max-w-screen-md mx-auto">
+    <div className="max-w-screen-md mx-8 md:mx-auto">
       <Header />
       <About />
       <Experience />

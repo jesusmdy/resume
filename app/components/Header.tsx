@@ -71,7 +71,7 @@ const Socials: FC = () => {
 const Header: FC = () => {
   return (
     <section className="mt-16 print:mt-0">
-      <article className="flex items-center gap-8">
+      <article className="flex flex-col-reverse md:flex-row items-center gap-8 print:flex-row">
         <div className="flex-1">
           <h1 className="font-extrabold text-4xl">Jesus Marcano</h1>
           <p className="text-md text-gray-700">
@@ -83,7 +83,7 @@ const Header: FC = () => {
         <img
           src="https://avatars.githubusercontent.com/u/26631510?v=4"
           alt="jesusmdy's profile picture"
-          className="w-32 h-32 rounded-xl shadow-md print:hidden"
+          className="w-32 h-32 rounded-full md:rounded-xl shadow-md print:hidden"
         />
       </article>
     </section>

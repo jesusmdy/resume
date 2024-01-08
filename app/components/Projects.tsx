@@ -84,10 +84,11 @@ const Project: FC<{ project: typeof projectList[0] }> = ({ project }) => {
 };
 
 const Projects: FC = () => {
+
   return (
     <div className="mt-16 print:mt-4 mb-16 print:mb-0">
       <h4 className="text-2xl font-bold mb-4 flex-1">Projects</h4>
-      <ul className="grid grid-cols-3 gap-4 print:flex print:flex-col">
+      <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 print:flex print:flex-col">
         {
           projectList.map(project => (
             <Project key={project.id} project={project} />
