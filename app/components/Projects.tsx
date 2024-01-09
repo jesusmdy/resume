@@ -10,9 +10,9 @@ const projectList = [
   },
   {
     id: 'growthsport',
-    name: 'GrowthSport',
+    name: 'Growth-Sport',
     description: 'The application is used by companies to keep control of their growing during the year.',
-    link: 'https://growthsport.com/',
+    link: 'https://growth-sport.com/',
     tags: ['NextJS', 'Typescript', 'Redux']
   },
   {
