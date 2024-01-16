@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jesusmdy.dev
+
+# Sitemaps
+Sitemap: https://jesusmdy.dev/sitemap.xml
