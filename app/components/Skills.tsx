@@ -5,10 +5,10 @@ import { FC, useState } from "react";
 type SkillLevel = 'beginner' | 'intermediate' | 'advanced' | 'expert';
 
 const skillLevelsColors: Record<string, string> = {
-  beginner: 'bg-red-50 text-red-700',
-  intermediate: 'bg-yellow-100 text-yellow-700',
-  advanced: 'bg-green-100 text-green-700',
-  expert: 'bg-blue-700 text-blue-100',
+  beginner: 'bg-red-50 text-red-700 border border-transparent dark:border-red-800 dark:bg-transparent',
+  intermediate: 'bg-yellow-100 text-yellow-700 border border-transparent dark:border-yellow-800 dark:bg-transparent',
+  advanced: 'bg-green-100 text-green-700 border border-transparent dark:border-green-800 dark:bg-transparent',
+  expert: 'bg-blue-700 text-blue-100 border border-transparent dark:border-blue-800 dark:bg-transparent dark:text-blue-500',
 };
 
 const levels = ['beginner', 'intermediate', 'advanced', 'expert'];
@@ -43,7 +43,12 @@ const skillsPyramid: SkillItemInterface[] = [
   },
   {
     id: 'react',
-    label: 'React/NextJS',
+    label: 'React.Js',
+    level: 'expert',
+  },
+  {
+    id: 'nextjs',
+    label: 'Next.Js',
     level: 'expert',
   },
   {
@@ -216,7 +221,7 @@ const SkillItem: FC<{ skill: SkillItemInterface }> = ({ skill }) => {
 
 const Skills: FC = () => {
   return (
-    <section className="mt-16 print:mt-2 border p-8 -ml-8 rounded-3xl border-transparent hover:border-gray-200 transition duration-300 print:border-none">
+    <section className="mt-16 print:mt-2 mb-16">
       <div className="flex items-center">
         <h4 className="text-2xl font-bold mb-4 flex-1">Skills</h4>
       </div>

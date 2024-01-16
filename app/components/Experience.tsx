@@ -5,6 +5,7 @@ interface ExperienceInterface {
   year: string;
   title: string;
   description: string;
+  tasks?: string[];
   isRemote?: boolean
 }
 
@@ -18,14 +19,20 @@ const ExperienceItem: FC<{
           <h4 className="text-lg font-bold">{item.label}</h4>
           {
             item.isRemote && (
-              <span className="text-xs bg-gray-200 text-gray-700 py-1 px-2 font-bold rounded-lg">Remote</span>
+              <span className="text-xs bg-gray-200 text-gray-700 py-1 px-2 font-bold rounded-lg dark:bg-zinc-800 dark:text-zinc-400">Remote</span>
             )
           }
         </div>
-        <p className="text-xs text-gray-600 px-4 py-2 bg-none md:bg-gray-50 font-semibold rounded-xl">{item.year}</p>
+        <p className="text-xs text-gray-600 px-4 py-2 bg-none md:bg-gray-50 font-semibold rounded-xl dark:bg-zinc-800 dark:text-zinc-400">{item.year}</p>
       </div>
       <h5 className="text-sm">{item.title}</h5>
-      <p className="text-gray-600 max-w-[80%] text-xs font-mono">{item.description}</p>
+      <ul className="list-disc flex flex-col gap-1">
+        {
+          item.tasks && item.tasks.map(task => (
+            <li key={task} className="ml-3 text-xs font-mono text-gray-600 dark:text-zinc-400">{task}</li>
+          ))
+        }
+      </ul>
     </article>
   );
 };
@@ -41,15 +48,36 @@ const Experience: FC = () => {
     {
       label: 'Freelancer',
       title: 'Full Stack developer',
-      year: '2020 - 2021',
+      year: '03/2020 - 04/2021',
       description: 'I started my career as a freelancer in 2020, where I worked on a variety of projects.',
+      tasks: [
+        "Worked to deliver high-quality custom web applications with advanced technologies.",
+        "Reworked an existing web sales application and improved user experience & customer engaging.",
+        "Direct contact with client's requirements and suggestions.",
+        "Managed to achieve customer satisfaction in product expectation."
+      ]
     },
     {
-      label: 'Resultier / Atomic32',
-      title: 'Front-end developer -> Lead front-end developer',
-      year: '2022 - 2024',
-      description: 'I joined Resultier (formerly Atomic32) as a front-end developer in 2022. I worked on a variety of projects that lead me to become the lead front-end developer in the same year. Having the opportunity to work with a variety of clients, I learned a lot about the importance of communication and teamwork.',
-      isRemote: true
+      label: 'Resultier',
+      title: 'Frontend developer',
+      year: '02/2022 - 01/2024',
+      description: 'I joined Resultier as a front-end developer in 2022. I worked on a variety of projects that lead me to become the lead front-end developer in the same year. Having the opportunity to work with a variety of clients, I learned a lot about the importance of communication and teamwork.',
+      isRemote: true,
+      tasks: [
+        "Worked in SASS that helped to save client's time when doing taxes.",
+        "Meticulously translated the client's vision into code, ensuring every feature and functionality was implemented flawlessly.",
+        "Integrate new features to existing web applications that were being used by customers.",
+        "Leaded the frontend team and managed to deliver a product with great quality.",
+        "Optimize larger applications and improve user experience and web performance.",
+        "Introduced and implement new design system.",
+        "Start a project from scratch and make it scalable for future developers.",
+        "Direct contact with client's concerns and suggestions about the workflow.",
+        "Lead the demo & product presentation of different projects.",
+        "Implement payment system and subscription flow.",
+        "Worked with the design team to integrate new features and improve the existing ones.",
+        "Developed a custom UI library that increased developer productivity and code reuse.",
+        "Integrate pipelines & automate developing workflow to save time when deploying comes."
+      ]
     }
   ];
   return (

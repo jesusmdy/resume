@@ -4,8 +4,8 @@ const About: FC = () => {
   return (
     <section className="flex flex-col gap-2 mt-16 print:mt-4">
       <h5 className="text-2xl font-bold">About me</h5>
-      <p className="text-xs font-mono text-gray-600">
-        Working with passion for what I love, I have successfully managed to contribute in different projects around the world. Thinking about the user experience and how it should work for the end-user. Currently focused on React.JS with Next.JS and different component libraries and query components such as GraphQL. With more than two years of experience working remotely for clients around the globe.
+      <p className="text-xs font-mono text-gray-600 dark:text-zinc-400">
+      I started learning web development in 2016. I specialized as a frontend in 2019 and I&apos;ve been working since 2020. I have experience in web application development with NextJs. I am also comfortable leading a team and working with other developers. I am a fast learner and always eager to learn new technologies.
       </p>
     </section>
   )
