@@ -11,8 +11,8 @@ const App: FC = () => {
       <Header />
       <About />
       <Experience />
-      <Skills />
       <Projects />
+      <Skills />
     </div>
   );
 };

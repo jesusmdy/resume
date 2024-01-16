@@ -37,19 +37,19 @@ const projectList = [
     tags: ['NextJS', 'Typescript', 'ChakraUI',]
   },
   {
+    id: 'stacksproject',
+    name: 'Stacks Management',
+    description: 'Dead-simple application to manage your Agile tasks.',
+    link: 'https://stacksproject.netlify.app/',
+    tags: ['NextJS', 'Typescript',]
+  },
+  {
     id: 'myplanetweight',
     name: 'My Planet Weight',
     description: 'The application is used to get an estimate of your weight in other planets.',
     link: 'https://planetcalculator.netlify.app/',
     tags: ['NextJS', 'Typescript',]
   },
-  {
-    id: 'Niton',
-    name: 'Niton',
-    description: 'Excel-like web application built with React and Typescript.',
-    link: null,
-    tags: ['NextJS', 'Typescript', 'Redux',]
-  }
 ];
 
 const Project: FC<{ project: typeof projectList[0] }> = ({ project }) => {
