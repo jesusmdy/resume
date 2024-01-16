@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 
 const App: FC = () => {
   return (
-    <section className="dark:bg-zinc-900 dark:text-white h-screen overflow-auto relative">
+    <section className="dark:bg-zinc-900 dark:text-white h-screen overflow-auto relative print:h-auto">
       <div className="max-w-screen-md mx-8 md:mx-auto">
         <Header />
         <About />

@@ -29,8 +29,22 @@ const ThemeSwitch: FC = () => {
     document.documentElement.classList.toggle('dark');
   };
 
+  useEffect(() => {
+    const mediaQueryList = window.matchMedia('print');
+    const changeThemeOnPrint = (mql: any) => {
+      if (mql.matches) {
+        setTheme('light');
+      }
+    };
+    mediaQueryList.addEventListener('change', changeThemeOnPrint);
+
+    return () => {
+      mediaQueryList.removeEventListener('change', changeThemeOnPrint);
+    };
+  }, []);
+
   return (
-    <button className="fixed right-8 top-4 w-8 h-8 capitalize border rounded-md dark:bg-zinc-800 dark:border-zinc-700" onClick={toggleTheme}>
+    <button className="fixed right-8 top-4 w-8 h-8 capitalize border rounded-md dark:bg-zinc-800 dark:border-zinc-700 print:hidden" onClick={toggleTheme}>
       {
         theme === 'light'
           ? '🌙'
