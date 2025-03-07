@@ -29,7 +29,7 @@ const Socials: FC = () => {
     },
     {
       label: 'Phone',
-      url: 'tel:+584124844990',
+      url: 'https://wa.me/+584124844990',
       icon: PhoneIcon
     },
     {

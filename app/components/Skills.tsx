@@ -97,11 +97,6 @@ const skillsPyramid: SkillItemInterface[] = [
     level: 'intermediate',
   },
   {
-    id: 'vue',
-    label: 'Vue/Nuxt',
-    level: 'intermediate',
-  },
-  {
     id: 'chakraui',
     label: 'Chakra UI',
     level: 'advanced',
@@ -112,9 +107,9 @@ const skillsPyramid: SkillItemInterface[] = [
     level: 'advanced',
   },
   {
-    id: 'python',
-    label: 'Python',
-    level: 'beginner',
+    id: 'auth0',
+    label: 'Auth0',
+    level: 'intermediate',
   },
   {
     id: 'php',

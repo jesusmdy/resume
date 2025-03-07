@@ -85,7 +85,9 @@ const Experience: FC = () => {
       year: '07/2024 - Present',
       description: 'Currently working with the frontend team of Clara and integrating exciting features for the users.',
       isRemote: true,
-      tasks: []
+      tasks: [
+        'Currently working with the frontend team of Clara and integrating exciting features for the users.'
+      ]
     }
   ];
   return (

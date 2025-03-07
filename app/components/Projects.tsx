@@ -2,8 +2,8 @@ import { FC } from 'react';
 
 const projectList = [
   {
-    id: 'Clara Card',
-    name: 'claracard',
+    id: 'claracard',
+    name: 'Clara Card',
     description: 'Working on new features for the users section at Clara Card.',
     link: 'https://www.clara.com/',
     tags: ['React', 'Typescript', 'Auth0']
