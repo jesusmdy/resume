@@ -72,16 +72,6 @@ const skillsPyramid: SkillItemInterface[] = [
     level: 'advanced',
   },
   {
-    id: 'mongodb',
-    label: 'MongoDB',
-    level: 'intermediate',
-  },
-  {
-    id: 'mysql',
-    label: 'MySQL',
-    level: 'intermediate',
-  },
-  {
     id: 'sass',
     label: 'Sass',
     level: 'intermediate',
@@ -90,16 +80,6 @@ const skillsPyramid: SkillItemInterface[] = [
     id: 'tailwindcss',
     label: 'TailwindCSS',
     level: 'advanced',
-  },
-  {
-    id: 'graphql',
-    label: 'GraphQL',
-    level: 'intermediate',
-  },
-  {
-    id: 'apollo',
-    label: 'Apollo',
-    level: 'intermediate',
   },
   {
     id: 'git',
@@ -115,11 +95,6 @@ const skillsPyramid: SkillItemInterface[] = [
     id: 'redux',
     label: 'Redux',
     level: 'intermediate',
-  },
-  {
-    id: 'svelte',
-    label: 'Svelte',
-    level: 'beginner',
   },
   {
     id: 'vue',
@@ -152,24 +127,9 @@ const skillsPyramid: SkillItemInterface[] = [
     level: 'intermediate',
   },
   {
-    id: 'vercel',
-    label: 'Vercel',
-    level: 'intermediate',
-  },
-  {
-    id: 'heroku',
-    label: 'Heroku',
-    level: 'intermediate',
-  },
-  {
     id: 'netlify',
     label: 'Netlify',
     level: 'intermediate',
-  },
-  {
-    id: 'npm',
-    label: 'NPM',
-    level: 'advanced',
   },
   {
     id: 'jest',

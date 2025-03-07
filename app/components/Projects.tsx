@@ -2,6 +2,13 @@ import { FC } from 'react';
 
 const projectList = [
   {
+    id: 'Clara Card',
+    name: 'claracard',
+    description: 'Working on new features for the users section at Clara Card.',
+    link: 'https://www.clara.com/',
+    tags: ['React', 'Typescript', 'Auth0']
+  },
+  {
     id: 'simmplemx',
     name: 'SimmpleMX',
     description: 'Integrate cutting-edge features to the complex web application that was being used by customers.',
@@ -42,14 +49,7 @@ const projectList = [
     description: 'Created a NextJS application to manage my tasks and keep track of my time.',
     link: 'https://stacksproject.netlify.app/',
     tags: ['NextJS', 'Typescript',]
-  },
-  {
-    id: 'myplanetweight',
-    name: 'My Planet Weight',
-    description: 'NextJs application to calculate your weight on different planets.',
-    link: 'https://planetcalculator.netlify.app/',
-    tags: ['NextJS', 'Typescript',]
-  },
+  }
 ];
 
 const Project: FC<{ project: typeof projectList[0] }> = ({ project }) => {

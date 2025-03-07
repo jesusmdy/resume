@@ -24,12 +24,12 @@ const Socials: FC = () => {
   const socials = [
     {
       label: 'Email',
-      url: 'mailto:jesusmarcanody@gmail.com',
+      url: 'mailto:contact@jesusmdy.dev',
       icon: MailIcon
     },
     {
       label: 'Phone',
-      url: 'tel:+584147619963',
+      url: 'tel:+584124844990',
       icon: PhoneIcon
     },
     {
@@ -38,7 +38,7 @@ const Socials: FC = () => {
       icon: LinkedInIcon
     },
     {
-      label: 'X (formerly Twitter',
+      label: 'X',
       url: 'https://x.com/jesusmdy',
       icon: XIcon
     },
@@ -77,7 +77,7 @@ const Header: FC = () => {
         <div className="flex-1">
           <h1 className="font-extrabold text-4xl">Jesus Marcano</h1>
           <p className="text-md text-gray-700 dark:text-gray-300">
-            Front-end developer building amazing user experiences.
+            Frontend developer building amazing user experiences.
           </p>
           <Location />
           <Socials />

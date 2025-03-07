@@ -78,6 +78,14 @@ const Experience: FC = () => {
         "Developed a custom UI library that increased developer productivity and code reuse.",
         "Integrate pipelines & automate developing workflow to save time when deploying comes."
       ]
+    },
+    {
+      label: 'Clara Card',
+      title: 'Frontend developer',
+      year: '07/2024 - Present',
+      description: 'Currently working with the frontend team of Clara and integrating exciting features for the users.',
+      isRemote: true,
+      tasks: []
     }
   ];
   return (
